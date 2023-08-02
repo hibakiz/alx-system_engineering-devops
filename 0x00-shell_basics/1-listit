@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
  ls 
+=======
+ ls /0x00-shell_basics
+>>>>>>> 086502d5d6618bcc67cdb7a1b4d041e074e1be83
