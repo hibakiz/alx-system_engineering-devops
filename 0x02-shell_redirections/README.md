@@ -3,3 +3,4 @@
 2-hellofile: print the content of passwd
 3-twofiles: print the content of passwd and hosts
 4-lastlines: print the last 10 lines
+5-firstlines: print the first 10 lines
