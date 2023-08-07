@@ -1,2 +1,2 @@
 #!/bin/bash
-tree | tail -1 | cut -d" " -f 1
+tree -a | tail -1 | cut -d" " -f 1
