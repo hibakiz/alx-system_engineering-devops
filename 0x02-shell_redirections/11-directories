@@ -1,2 +1,2 @@
 #!/bin/bash
-tree -a | tail -1 | cut -d" " -f 1
+tree -a | find -type d | wc -l
