@@ -8,3 +8,4 @@
 7-file: create a complex school file
 8-ls_cwd_state: print ls into file
 9-duplicat_last_line: duplicate last line
+10-no_more_js: delete all js files
