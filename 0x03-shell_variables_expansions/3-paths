@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $PATH > PATH.txt | grep -o -i ":" PATH.txt | wc -l
+echo $PATH | tr -s ":" "\n" | wc -l
