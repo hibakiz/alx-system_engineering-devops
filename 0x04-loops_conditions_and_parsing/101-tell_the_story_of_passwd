@@ -6,6 +6,6 @@ while read -r username per gp_id usr_id grpo home_dir cmd; do
 	#username="$(echo "$line" | cut -d: -f1)"
 	#user_id="$(echo "$line" | cut -d: -f3)"
 	#home_dir="$(echo "$line" | cut -d: -f6)"
-	echo "The user $username is part of the $gp_id gang, lives in $home_dir and rides $cmd. $usr_id's place is protected by the passcode $per, more info about the user here: $(echo $grpo | cut -d ',' -f1)"
+	echo "The user $username is part of the $gp_id gang, lives in $home_dir and rides $cmd. $usr_id's place is protected by the passcode $per, more info about the user here: $grpo"
 
 done < /etc/passwd
