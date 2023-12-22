@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
-# ps app
-ps aux
+# print the ps
+ps al
