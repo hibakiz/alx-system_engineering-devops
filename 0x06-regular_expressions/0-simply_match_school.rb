@@ -1,9 +1,2 @@
 #!/usr/bin/env ruby
-regex = /School/
-str = ""
-for word in ARGV
-	if word.match(regex)
-		str += word
-	end
-end
-puts str
+puts ARGV[0].scan(/Holberton/).join

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Telnet in port 98 for localhost
+sudo nc -lk 98
