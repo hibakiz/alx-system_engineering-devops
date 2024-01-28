@@ -1,4 +1,4 @@
-chmod 777 0x05-processes_and_signals/*
-git add 0x05-processes_and_signals
-git commit -m "Christmas gifts"
+chmod 777 0x06-regular_expressions/*
+git add 0x06-regular_expressions
+git commit -m "Ruby"
 git push
