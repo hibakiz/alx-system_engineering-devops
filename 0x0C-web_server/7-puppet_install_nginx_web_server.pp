@@ -1,3 +1,5 @@
+# Automating project requirements using Puppet
+
 
 exec { 'add nginx stable repo':
   command => 'sudo add-apt-repository ppa:nginx/stable',
