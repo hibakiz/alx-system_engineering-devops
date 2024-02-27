@@ -2,12 +2,7 @@
 # reidrection
 apt update -y
 apt install -y nginx
-echo "Hello World!" >  /var/www/html/index.nginx-debian.html
-string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/github.com\/besthor permanent;"
+echo "Hello World!" | sudo tee /var/www/html/index.html
+string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.blog.ehoneahobed.com permanent;"
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
-if [ "$(pgrep nginx)" -le 0 ];
-then
-    service nginx start
-else
-    service nginx restart
-fi;
+service nginx restart
