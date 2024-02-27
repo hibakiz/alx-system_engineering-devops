@@ -7,5 +7,5 @@ string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.y
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 service nginx restart
 echo "This is not a page" | sudo tee /var/www/html/custom_404.html > /dev/null
-sed -i "46i error_page 404 /custom_404.html;" /etc/nginx/sites-available/default
+sed -i " error_page 404 /custom_404.html;" /etc/nginx/sites-available/default
 service nginx restart
