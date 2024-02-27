@@ -6,6 +6,6 @@ echo "Hello World!" | sudo tee /var/www/html/index.html
 string_for_replacement="server_name _;\n\trewrite ^\/redirect_me https:\/\/www.youtube.com permanent;"
 sudo sed -i "s/server_name _;/$string_for_replacement/" /etc/nginx/sites-enabled/default
 service nginx restart
-echo "Ceci n'est pas une page" | sudo tee /var/www/html/custom_404.html > /dev/null
+echo "This is not a page" | sudo tee /var/www/html/custom_404.html > /dev/null
 sed -i "46i error_page 404 /custom_404.html;" /etc/nginx/sites-available/default
 service nginx restart
