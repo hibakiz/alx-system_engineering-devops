@@ -3,3 +3,14 @@
 apt update
 apt install haproxy -y
 
+echo "
+   listen load_balancer
+   bind *:80
+   mode http
+   balance roundrobin
+   option httpclose
+   option forwardfor
+   server 513120-web-01 100.26.171.122:80 check
+   server 513120-web-02 54.198.41.176:80 check
+" >> /etc/haproxy/haproxy.cfg
+service haproxy restart
