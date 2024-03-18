@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Allow SSH (port 22), HTTP and HTTPS
+sudo ufw allow OpenSSH
+sudo ufw allow https
+sudo ufw allow http
+sudo ufw default deny
+sudo ufw enable
