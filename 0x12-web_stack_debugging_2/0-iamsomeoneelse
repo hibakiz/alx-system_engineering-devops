@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# whoami and flan
+sudo -u "$1" whoami
